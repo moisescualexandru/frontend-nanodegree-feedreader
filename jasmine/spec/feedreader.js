@@ -92,9 +92,9 @@ $(function() {
     /* Test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
         var container = $('.feed'),
-            initialFeed, // counter that stores the number of feeds already loaded
-            secondFeed; //counter that increments after each feed is loaded
-
+            initialFeed, // counter that stores the first loaded feed
+            secondFeed; // counter that stores the second loaded feed
+            
         /* Loading the first 2 feeds */
         beforeEach (function(done) {
             loadFeed(0, function() {
